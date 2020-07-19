@@ -1,4 +1,4 @@
-package com.kindsonthegenius.thymeleafapp;
+package com.yemmback.crudapp;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,7 +7,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ThymeleafAppApplicationTests {
+public class SpringH2CrudAppApplicationTests {
 
 	@Test
 	public void contextLoads() {

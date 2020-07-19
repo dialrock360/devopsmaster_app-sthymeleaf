@@ -1,20 +1,17 @@
-package com.kindsonthegenius.thymeleafapp.controllers;
+package com.yemmback.crudapp.controllers;
 
 import java.util.List;
 import java.util.Optional;
 
+import com.yemmback.crudapp.models.Student;
+import com.yemmback.crudapp.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.thymeleaf.context.WebContext;
-
-import com.kindsonthegenius.thymeleafapp.models.Student;
-import com.kindsonthegenius.thymeleafapp.services.StudentService;
 
 @Controller
 @RequestMapping("/students")
@@ -25,7 +22,7 @@ public class StudentController {
 
 	@RequestMapping("/getAll")
 	public String getAll(Model model) {
-		model.addAttribute("username", "Kindson");
+		model.addAttribute("username", "Diarock");
 		List<Student> students = studentService.getAll();
 		model.addAttribute("students", students);
 		return "students";

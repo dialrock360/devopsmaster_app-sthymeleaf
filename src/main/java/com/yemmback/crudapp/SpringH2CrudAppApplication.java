@@ -1,13 +1,13 @@
-package com.kindsonthegenius.thymeleafapp;
+package com.yemmback.crudapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ThymeleafAppApplication {
+public class SpringH2CrudAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ThymeleafAppApplication.class, args);
+		SpringApplication.run(SpringH2CrudAppApplication.class, args);
 	}
 
 }

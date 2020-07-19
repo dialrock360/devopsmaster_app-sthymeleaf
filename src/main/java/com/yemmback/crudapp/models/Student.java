@@ -1,4 +1,4 @@
-package com.kindsonthegenius.thymeleafapp.models;
+package com.yemmback.crudapp.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
